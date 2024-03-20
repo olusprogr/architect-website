@@ -1,0 +1,13 @@
+.link-button {
+    border: none;
+    color: white;
+    padding: 14px 28px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 18px;
+    margin: 2px 1px;
+    cursor: pointer;
+    border: 2px solid #ffffff;
+    border-radius: 5px;
+}
