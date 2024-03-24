@@ -16,8 +16,8 @@ import { NavbarComponent } from '../navbar/navbar.component';
     'style/action.css',
     'style/title.css',
     'style/description.css',
-    'style/main.css',
     'style/under-actions.css',
+    'style/at-logo.css',
   ]
 })
 export class HomeComponent {

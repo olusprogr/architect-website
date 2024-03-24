@@ -3,7 +3,7 @@ ul li a {
     text-decoration: none;
     padding: 10px 15px;
     display: inline-block;
-    font-size: 20px;
+    font-size: 21px;
     font-weight: 500;
     transition: 0.5s;
 }
@@ -18,18 +18,32 @@ ul li a:hover {
     color: black;
     text-decoration: none;
   }
-  .nav-link::before {
-    content: '';
-    position: absolute;
-    bottom: 0;
-    left: 50%;
-    width: 0;
-    height: 2px;
-    background-color: blue;
-    transition: width 0.2s ease, left 0.3s ease;
-    transform: translateX(-50%);
-  }
-  .nav-link:hover::before,
-  .nav-link.active::before {
-    width: calc(100% - 10px);
-  }
+.nav-link::before {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  width: 0;
+  height: 2px;
+  background-color: blue;
+  transition: width 0.2s ease, left 0.3s ease;
+  transform: translateX(-50%);
+}
+.nav-link:hover::before,
+.nav-link.active::before {
+  width: calc(100% - 10px);
+}
+
+.at-logo {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+.notLogo {
+  display: flex;
+  align-items: center;
+  font-family: 'Afacad', sans-serif;
+  font-weight: 500;
+}

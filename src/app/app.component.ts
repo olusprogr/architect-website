@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, HostListener } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
 import { NavbarComponent } from './navbar/navbar.component';
 
@@ -14,4 +14,10 @@ import { NavbarComponent } from './navbar/navbar.component';
 })
 export class AppComponent {
   title = 'architect-website';
+  counter = 0;
+  @HostListener('window:keydown.enter', ['$event'])
+  handleKeyboardEvent(event: KeyboardEvent) {
+    this.counter++;
+    console.log('Enter key pressed', this.counter);
+  }
 }

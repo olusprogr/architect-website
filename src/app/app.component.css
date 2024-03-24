@@ -1,0 +1,11 @@
+header {
+    color: white;
+    text-align: center;
+    padding: 1em;
+}
+
+header div a {
+    color: white;
+    margin-left: 10px;
+    margin-right: 10px;
+}

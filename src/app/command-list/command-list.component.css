@@ -1,36 +1,43 @@
 .container {
     background-color: rgba(0, 0, 0, 0.363);
     padding: 20px;
-    border-radius: 5px;
+    border-radius: 10px;
+    width: 80%;
 }
 
-.table {
-    background-color: #fff; /* Weiß */
-    border-radius: 5px;
-}
-
-th, td {
-    border: 1px solid #ddd; /* Hellgrau */
-    padding: 8px;
-}
-
-th {
-    background-color: #4e5d6c; /* Dunkelblau */
-    color: #fff; /* Weiß */
-}
-
-tbody tr:nth-child(even) {
-    background-color: #f2f2f2; /* Hellgrau */
-}
-
-tbody tr:hover {
-    background-color: #ddd; /* Dunkelgrau */
-}
-
-h1 {
-    color: #4e5d6c; /* Dunkelblau */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    margin: 0;
+    padding: 0;
 }
 
 .title {
     color: #ffffff;
+    text-align: center;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    border-radius: 5px;
+}
+
+th, td {
+    padding: 12px;
+    text-align: left;
+    border-bottom: 1px solid #aaa;
+}
+
+td {
+    color: white;
+}
+
+th, .command-name {
+    color: #8581FF;
+}
+
+th {
+    font-weight: bold;
 }
