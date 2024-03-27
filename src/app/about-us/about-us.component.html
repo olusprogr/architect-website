@@ -1,1 +1,17 @@
-<p>about-us works!</p>
+<div class="container">
+    <div class="row">
+        <div *ngFor="let person of this.we" class="person-container">
+            <div class="person-text my-3 mx-5">
+                <div><img [src]="person.link" alt="Person Photo" class="person-photo m-5"></div>
+                <div>
+                    <h3 class="name">{{ person.name }}</h3>
+                    <p class="role">{{ person.role }}</p>
+                    <p class="ranking">{{ person.ranking }}</p>
+                    <p class="prog-languages">{{ person.progLanguages }}</p>
+                    <p class="languages">{{ person.languages }}</p>
+                    <p class="email">{{ person.email }}</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

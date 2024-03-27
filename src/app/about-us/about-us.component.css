@@ -1,0 +1,44 @@
+.container {
+    background-color: rgba(0, 0, 0, 0.363);
+    padding: 100px;
+    border-radius: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.name {
+    font-weight: bold;
+    font-size: 1.6em;
+    color: #8581FF;
+}
+
+.role {
+    font-style: italic;
+}
+
+p {
+    font-size: 18px;
+    color: #ffffff;
+}
+
+.person-text {
+    text-align: center;
+    display: flex;
+    align-items: center;
+}
+
+.person-container {
+    display: flex;
+    justify-content: center;
+}
+
+@media (max-width: 1000px) {
+    .person-text {
+        flex-direction: column;
+    }
+}
+
+.email {
+    text-decoration: underline;
+}
