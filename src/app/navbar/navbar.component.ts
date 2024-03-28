@@ -18,14 +18,15 @@ export class NavbarComponent {
   navigateTo(direction: string = 'home') {
     switch (direction) {
       case 'home':
-        this.router.navigate(['/home']);
+        this.router.navigate(['home']);
         break;
       case 'command-list':
-        this.router.navigate(['/about']);
+        this.router.navigate(['command-list']);
         break;
       case 'about-us':
-        this.router.navigate(['/services']);
+        this.router.navigate(['about-us']);
         break;
+      default: this.router.navigate(['home']);
     }
   }
 }
