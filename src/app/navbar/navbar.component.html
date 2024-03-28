@@ -5,12 +5,15 @@
         <h3>ArchiTect</h3>
       </div>
     <li class="nav-item notLogo mx-md-4">
-      <a class="nav-link" (click)="navigateTo('home')">Home</a>
+      <a class="nav-link" routerLink="./home/" routerLinkActive="active"
+      [routerLinkActiveOptions]="{exact: true}" ariaCurrentWhenActive="page">Home</a>
     </li>
     <li class="nav-item notLogo mx-md-4">
-      <a class="nav-link" (click)="navigateTo('command-list')">Command List</a>
+      <a class="nav-link" routerLink="./command-list/" routerLinkActive="active"
+      [routerLinkActiveOptions]="{exact: true}" ariaCurrentWhenActive="page">Command List</a>
     </li>
     <li class="nav-item notLogo mx-md-4">
-      <a class="nav-link" (click)="navigateTo('about-us')">About Us</a>
+      <a class="nav-link" routerLink="./about-us/" routerLinkActive="active"
+      [routerLinkActiveOptions]="{exact: true}" ariaCurrentWhenActive="page">About Us</a>
     </li>
 </ul>

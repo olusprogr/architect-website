@@ -12,6 +12,19 @@
     padding: 10px;
     width: 45%;
     text-align: center;
+    align-items: center;
     background-color: rgba(0, 0, 0, 0.473);
     border-color: #8581FF;
+}
+
+@media (max-width: 768px) {
+    .actions-containers {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .action {
+        width: 100%;
+        margin-bottom: 10px;
+    }
 }
